@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20130918232101) do
   create_table "users", force: true do |t|
     t.string   "fname"
     t.string   "lname"
-    t.string   "password"
+    t.string   "crypted_password", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
